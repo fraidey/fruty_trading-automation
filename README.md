@@ -24,13 +24,16 @@ psql --username=trading
 exit
 
 - now go to Flower UI:  http://127.0.0.1:5010
+
 You should see a few failed tasks (when we hadn't created yet the DB table), and the latest
 tasks must be successful.
 
 - now go to pgweb UI: http://127.0.0.1:8080
+
 You should see some records in the forex_data_eurusd table.
 
 - now go to Grafana: http://127.0.0.1:7000  (credentials: admin/password)
+
 Click on "add data source"
 Name: postgres
 Type: PostgreSQL

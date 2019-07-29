@@ -78,7 +78,7 @@ That's it! You now have a fully functioning automated trading platform!
 The logic is implemented in the celery python worker, in worker/tasks.py and script.py
 
 In order to update the logic, go and read ib_insync package documentation (https://github.com/erdewit/ib_insync). You'll probably want first to fetch more diverse data, and then, ultimately,
-to code a trading strategy and place buy/sell orders.
+to code a trading strategy and place buy/sell orders. To achieve this, you'll need to understand the ib_insync calls and use them in the python worker logic.
 
 Of course, you might have to create new tables in the Postgres DB, if you start fetching new kinds of data.
 

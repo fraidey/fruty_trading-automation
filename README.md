@@ -10,11 +10,13 @@
 - in docker-compose.yml, edit the TWSUSERID and TWSPASSWORD environment variables
 
 - docker-compose up -d
+
 Make sure all services are up and running.
 NOTE: pgweb is often down at first because postgres is still starting. Wait a few seconds,
 re-run docker-compose up -d and pgweb will come online.
 
 - create the table in the database
+
 docker-compose exec postgres /bin/bash
 psql --username=trading
 \i /init/init.sql;

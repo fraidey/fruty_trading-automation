@@ -35,17 +35,27 @@ You should see some records in the forex_data_eurusd table.
 - now go to Grafana: http://127.0.0.1:7000  (credentials: admin/password)
 
 Click on "add data source"
+
 Name: postgres
+
 Type: PostgreSQL
+
 Host: postgres
+
 Database: trading (see .env file)
+
 User: trading (see .env file)
+
 Password: trading (see .env file)
+
 SSL mode: disable
 
 Then click on "create a dashboard", type "Graph". When your graph panel is created,
+
 Click on its title and then on "Edit".
+
 Select Postgres data source, and for the query, enter:
+
 SELECT
   $__time(time),
   value_open

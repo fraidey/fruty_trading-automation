@@ -1,4 +1,4 @@
-
+This repository refers to https://fruty.io/2019/07/30/trading-automation-with-interactive-broker-api-python-and-docker/
 
 
 ### Procedure
